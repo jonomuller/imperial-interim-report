@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
+\usepackage{hyperref}
+
 \begin{document}
 
 \include{titlepage}
@@ -19,6 +21,11 @@
 \include{sections/background}
 \include{sections/project_plan}
 \include{sections/evaluation_plan}
+
+\bibliographystyle{unsrt}
+\bibliography{sections/bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+
 \include{sections/appendix}
 
 \end{document}
