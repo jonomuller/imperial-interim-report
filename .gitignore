@@ -14,6 +14,7 @@
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
+main.pdf
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
