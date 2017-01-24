@@ -10,7 +10,14 @@
 
 \begin{document}
 
+% Allows for horizontal lines with custom thickness on title page
+\makeatletter
+   \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
 \include{titlepage}
+
+\setlength{\parskip}{0.3cm}
 
 \begin{spacing}{1.7}
   \tableofcontents
