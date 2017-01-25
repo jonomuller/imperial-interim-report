@@ -19,20 +19,22 @@
 
 \setlength{\parskip}{0.3cm}
 
-\begin{spacing}{1.7}
+\begin{spacing}{1.4}
   \tableofcontents
 \end{spacing}
 \newpage
 
-\include{sections/introduction}
-\include{sections/background}
-\include{sections/project_plan}
-\include{sections/evaluation_plan}
-
-\bibliographystyle{unsrt}
-\bibliography{sections/bibliography}
-\addcontentsline{toc}{chapter}{Bibliography}
-
-\include{sections/appendix}
+\begin{spacing}{1.1}
+  \include{sections/introduction}
+  \include{sections/background}
+  \include{sections/project_plan}
+  \include{sections/evaluation_plan}
+  
+  \bibliographystyle{unsrt}
+  \bibliography{sections/bibliography}
+  \addcontentsline{toc}{chapter}{Bibliography}
+  
+  \include{sections/appendix}
+\end{spacing}
 
 \end{document}
