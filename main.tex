@@ -3,12 +3,15 @@
 \usepackage{a4,fullpage}
 \usepackage{enumitem}
 \usepackage{setspace}
+\usepackage{natbib}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
 \usepackage{hyperref}
 
 \begin{document}
+
+\setcitestyle{square,numbers}
 
 % Allows for horizontal lines with custom thickness on title page
 \makeatletter
@@ -30,7 +33,7 @@
   \include{sections/project_plan}
   \include{sections/evaluation_plan}
   
-  \bibliographystyle{unsrt}
+  \bibliographystyle{unsrtnat}
   \bibliography{sections/library}
   \addcontentsline{toc}{chapter}{Bibliography}
   
