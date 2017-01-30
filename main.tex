@@ -5,6 +5,8 @@
 \usepackage{setspace}
 \usepackage{natbib}
 \usepackage{array}
+\usepackage{multirow}
+\usepackage{pifont}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
@@ -13,6 +15,10 @@
 \begin{document}
 
 \setcitestyle{square,numbers}
+
+% Defines tick and cross
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 
 % Allows for horizontal lines with custom thickness on title page
 \makeatletter
