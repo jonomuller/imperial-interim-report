@@ -20,6 +20,10 @@
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 
+% Allows centred paragraph cells in tables
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
 % Allows for horizontal lines with custom thickness on title page
 \makeatletter
    \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
