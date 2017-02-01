@@ -27,7 +27,7 @@ Table \ref{table:existing-walking-apps} shows how well each of the existing appl
     Social interaction (5) & 2 & 2 & 2 & 0 & 0 & 0\\
     \hline
     \hline
-    Total & 12 & 10 & 9 & 8 & 7 & 9\\
+    Total (16) & 12 & 10 & 9 & 8 & 7 & 9\\
     \hline
   \end{tabular}
   \caption{Matrix showing how well existing walking apps perform at given features}
@@ -40,7 +40,7 @@ The rest of this section discusses each application in detail, explaining their 
 
 \subsection{MapMyWalk}
 
-MapMyWalk \cite{Map}, a popular fitness application for iOS and Android, allows you to track your walks and compete against other users by completing challenges.
+MapMyWalk \cite{Map} is a popular fitness application for iOS and Android that allows you to track your walks and compete against other users by completing challenges. 
 
 The app also provides a premium subscription for \pounds4.49 per month, which gives you the ability to monitor your heart rate and set training goals designed to help you walk more.
 
@@ -50,7 +50,19 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 
 \subsection{Google Maps}
 
+Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one of the oldest services that provides route planning via different transport modes. The app contains current information about public transport, traffic and displays well-known cycling routes on map but there is little in the way of customisation for walking. When entering a destination, the app generates a route but users can also choose from a few different routes on map with the difference in time each one would take. However, no information is given as to whether a certain route is quieter than another, for example.
+
+% add screenshot of walking route and time added on
+
+One feature of the Google Maps iOS application that is interesting to note is the places search along a route during a journey. Once a user has started a walking journey, they are able to search for places that are along the route. Google provides some categories of places to choose from, such as cashpoints and restaurants, but users can search for a specific place if they wish. The app will then display the results of the places search on the map showing how much additional time would be added on to your journey if you were to stop at a place, if any. One of more places can then be added to your journey and the walking directions will subsequently update to include these new stops. The whole process of choosing a place category, selecting places on a map and stops being added to a journey can be seen in ***fig***.
+
+The places search feature is important as it directly relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 3}). More research is conducted in Section *** to discover what tools these applications use to implement this feature.
+
+% talk about places api + refer to later section
+
 \subsection{Citymapper}
+
+Originating in London, Citymapper \cite{Citymapper} has become one of the leading journey planners for major cities around the world including Paris, Barcelona, New York, Tokyo and Sydney.
 
 \subsection{Pok\'{e}mon Go}
 
@@ -71,6 +83,7 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 
 
 % not sure whether to include this in background or design?
+% think I will include general background on technologies here, and then which ones I chose in design
 \section{Technologies}
 %
 \subsection{Operating System}
@@ -79,4 +92,9 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 %
 %\subsection{Database}
 %
+
+\subsection{Location Tracking}
+
+% section on how to track calories burned?
+
 \subsection{APIs}
