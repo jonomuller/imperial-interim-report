@@ -7,6 +7,7 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{pifont}
+\usepackage{fancyhdr}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
@@ -14,6 +15,11 @@
 
 \begin{document}
 
+% fancy header at top of each page 
+\pagestyle{fancy}
+\setlength{\headsep}{1cm} % changes space at top of page
+
+% allows for normal citing with this bib style
 \setcitestyle{square,numbers}
 
 % Defines tick and cross
