@@ -1,4 +1,4 @@
-\chapter{Background}
+\chapter{Background} \label{chapter:background}
 
 
 \section{Existing Applications}
@@ -30,6 +30,7 @@ Table \ref{table:existing-walking-apps} shows how well each of the existing appl
     Total (16) & 12 & 10 & 9 & 8 & 7 & 9\\
     \hline
   \end{tabular}
+%  *** redo caption to give more explanation***  
   \caption{Matrix showing how well existing walking apps perform at given features}
   \label{table:existing-walking-apps}
 \end{table}
@@ -46,11 +47,15 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 
 \subsection{Strava}
 
-Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk.
+Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistic screen as shown in Figure ***, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre
+
+% add figure of stats screen in strava, will need to go on a walk to produce
 
 \subsection{Let's Walk}
 
 A lesser well-known iOS application is Let's Walk \cite{LetsWalkApp}. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. Users can record new walks and view a list of either their friends' walks or public walks nearby. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
+
+The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day
 
 \subsection{Google Maps}
 
@@ -59,7 +64,7 @@ Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one
 \begin{figure}[hbt]
   \centering
   \includegraphics[width=\textwidth]{google_maps_place_search}
-  \caption{Adding places along your walking route in Google Maps for iOS. A list of categories to choose from (left) then shows all the places from within a search on a map (middle). A stop can then be added and the journey will be updated (right).}
+  \caption{Adding places along your walking route in Google Maps for iOS. A list of categories to choose from (left), then shows all the places from within a search on a map (middle). A stop can then be added and the journey will be updated (right).}
   \label{fig:google_maps_place_search}
 \end{figure}
 
@@ -70,15 +75,19 @@ The places search feature is important as it is unique within any of the existin
 
 \subsection{Citymapper}
 
-Originating in London, Citymapper \cite{Citymapper} has become one of the leading journey planners for major cities around the world including Paris, Barcelona, New York, Tokyo and Sydney. Routes can be planned given an origin and a destination and different modes of transport can be combined to create a faster journey time. For example, a journey from Imperial College to Oxford Circus as shown in Figure *** could just use the Tube, but it could be faster to hire a bike to a different station and then take the Tube.
+Originating in London, Citymapper \cite{Citymapper} has become one of the leading journey planners for major cities around the world including Paris, Barcelona, New York, Tokyo and Sydney. One of the key features of Citymapper is that different modes of transport can be combined to create a faster journey time. For example, a journey from Imperial College to Oxford Circus as shown in Figure \ref{fig:citymapper} could just use the Tube, but it could be faster to hire a bike to a different station and then take the Tube.
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.7\textwidth]{citymapper}
+  \caption{Two routes generated on the Citymapper website superimposed}
+  \label{fig:citymapper}
+\end{figure}
+
 
 \subsection{Pok\'{e}mon Go}
 
-%\subsection{Walking Apps}
-
-%There are a few existing applications that have
-
-%\subsection{Navigation Apps}
+Pok\'{e}mon Go
 
 % maybe don't include this
 %Although existing navigation apps do not contain any features relating to tracking walks, they do provide information about how journeys and places are displayed on a map.
