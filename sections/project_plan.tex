@@ -4,8 +4,10 @@
 % overview one first, with design, implementation, exams, report writing and evaluation
 % more detailed one just focusing on implementation (what needs to be done when)
 
+\newcolumntype{?}{!{\vrule width 10pt}}
+
 \begin{table}[hbt]
-%  \hspace*{-1cm}
+  \setlength\tabcolsep{3 pt}
   \centering
   \begin{tabular}{|c|| *{24}{M{0.35cm}|}}
     \hline
@@ -14,27 +16,27 @@
     & 9 & 16 & 23 & 30 & 6 & 13 & 20 & 27 & 6 & 13 & 20 & 27 & 3 & 10 & 17 & 24 & 1 & 8 & 15 & 22 & 29 & 5 & 12 & 19\\
     \hline
     \hline
-    Research & \cellcolor{BrickRed} & \cellcolor{BrickRed} & \cellcolor{BrickRed} & \cellcolor{BrickRed} & \cellcolor{BrickRed} & & & & & & \multirow{6}{*}{\rotatebox[origin=c]{270}{Exams}} & & & & & & & & & & & & &\\
+    Research & \multicolumn{5}{|c|}{\cellcolor{BrickRed}} & & & & & & \multirow{6}{*}{\rotatebox[origin=c]{270}{Exams}} & & & & & & & & & & & & &\\
     \cline{1-11}
     \cline{13-25}
-    Design & & & & \cellcolor{BurntOrange} & \cellcolor{BurntOrange} & \cellcolor{BurntOrange} & \cellcolor{BurntOrange} & & & & & & & & & & & & & & & & &\\
+    Design & & & & \multicolumn{4}{|c|}{\cellcolor{BurntOrange}} & & & & & & & & & & & & & & & & &\\
     \cline{1-11}
     \cline{13-25}
-    Implementation & & & & & & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} &  & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & \cellcolor{YellowGreen} & & &\\
+    Implementation & & & & & & \multicolumn{5}{|c|}{\cellcolor{YellowGreen}} & & \multicolumn{10}{|c|}{\cellcolor{YellowGreen}} & & &\\
     \cline{1-11}
     \cline{13-25}
-    Evaluation & & & & & & & & & & \cellcolor{OliveGreen} &  & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & \cellcolor{OliveGreen} & &\\
+    Evaluation & & & & & & & & & & \cellcolor{OliveGreen} &  & \multicolumn{11}{|c|}{\cellcolor{OliveGreen}} & &\\
     \cline{1-11}
     \cline{13-25}
-    Report & & & & & & & & & & & & & & & & & & & \cellcolor{ProcessBlue} & \cellcolor{ProcessBlue} & \cellcolor{ProcessBlue} & \cellcolor{ProcessBlue} & \cellcolor{ProcessBlue} &\\
+    Report & & & & & & & & & & & & & & & & & & & \multicolumn{5}{|c!{\color{red}\vrule width 3pt}}{\cellcolor{ProcessBlue}} &\\
     \cline{1-11}
     \cline{13-25}
-    Presentation & & & & & & & & & & & & & & & & & & & & & & & \cellcolor{RoyalBlue} & \cellcolor{RoyalBlue}\\
+    Presentation & & & & & & & & & & & & & & & & & & & & & & & \multicolumn{2}{|c!{\color{red}\vrule width 3pt}}{\cellcolor{RoyalBlue}}\\
     \hline
   \end{tabular}
   \caption{}
+  \label{table:project-plan}
 \end{table}
-
 
 \section{Requirements} \label{section:requirements}
 
