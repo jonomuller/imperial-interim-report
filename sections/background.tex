@@ -29,13 +29,12 @@ Table \ref{table:existing-walking-apps} shows how well each of the existing appl
     \hline
     Total (16) & 12 & 10 & 9 & 8 & 7 & 9\\
     \hline
-  \end{tabular}
-%  *** redo caption to give more explanation***  
-  \caption{Matrix showing how well existing walking apps perform at given features}
+  \end{tabular}  
+  \caption{Matrix showing how well existing walking apps perform at given features. Each app is given a score for a category, with the maximum score shown in brackets next to the feature category.}
   \label{table:existing-walking-apps}
 \end{table}
 
-The rest of this section discusses each application in detail, explaining their benefits and limitations. All of the applications are free to use unless stated otherwise.
+The rest of this section discusses each application in detail, explaining their benefits and limitations. All of the applications researched are free to use unless stated otherwise.
 
 % go through each existing app, discussing why they are good/bad with images
 
@@ -47,15 +46,23 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 
 \subsection{Strava}
 
-Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistic screen as shown in Figure ***, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre
+Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistics screen as shown in Figure \ref{fig:strava}, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre.
 
-% add figure of stats screen in strava, will need to go on a walk to produce
+The setback of Strava is that you cannot track walks in the app, you are constrained to either running or cycling. 
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.8\textwidth]{strava}
+  \caption{Journey view in Strava, allowing you to switch between statistics (left) or a map of your progress (right)}
+  \label{fig:strava}
+\end{figure}
+
 
 \subsection{Let's Walk}
 
-A lesser well-known iOS application is Let's Walk \cite{LetsWalkApp}. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. Users can record new walks and view a list of either their friends' walks or public walks nearby. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
+A lesser well-known iOS application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
 
-The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day
+The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
 
 \subsection{Google Maps}
 
@@ -87,7 +94,7 @@ Originating in London, Citymapper \cite{Citymapper} has become one of the leadin
 
 \subsection{Pok\'{e}mon Go}
 
-Pok\'{e}mon Go
+%Pok\'{e}mon Go
 
 % maybe don't include this
 %Although existing navigation apps do not contain any features relating to tracking walks, they do provide information about how journeys and places are displayed on a map.
@@ -117,6 +124,10 @@ To track the user's location within iOS, an application can use the classes from
 % section on how to track calories burned?
 
 \subsection{APIs}
+
+Map APIs
+
+Places APIs
 
 % compare Google Maps and Apple Maps
 % and Google Places etc.
