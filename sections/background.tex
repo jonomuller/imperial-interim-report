@@ -16,9 +16,9 @@ Table \ref{table:existing-walking-apps} shows how well each of the existing appl
     \textbf{Features} & \textbf{MapMyWalk} & \textbf{Strava} & \textbf{Let's Walk} & \textbf{Google Maps} & \textbf{Citymapper} & \textbf{Pok\'{e}mon Go}\\
     \hline
     \hline
-    Design (2) & 2 & 2 & 2 & 2 & 2 & 2\\
+    Design (2) & 1 & 2 & 1 & 2 & 2 & 2\\
     \hline
-    Ease of use (3) & 3 & 3 & 2 & 3 & 3 & 3\\
+    Ease of use (3) & 3 & 3 & 1 & 3 & 3 & 3\\
     \hline
     Tracking location (2) & 2 & 2 & 2 & 1 & 1 & 1\\
     \hline
@@ -27,7 +27,7 @@ Table \ref{table:existing-walking-apps} shows how well each of the existing appl
     Social interaction (5) & 2 & 2 & 2 & 0 & 0 & 0\\
     \hline
     \hline
-    Total (16) & 12 & 10 & 9 & 8 & 7 & 9\\
+    Total (16) & 11 & 10 & 7 & 8 & 7 & 9\\
     \hline
   \end{tabular}  
   \caption{Matrix showing how well existing walking apps perform at given features. Each app is given a score for a category, with the maximum score shown in brackets next to the feature category.}
@@ -46,9 +46,9 @@ The app also provides a premium subscription for \pounds4.49 per month, which gi
 
 \subsection{Strava}
 
-Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistics screen as shown in Figure \ref{fig:strava}, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre.
+Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistics screen as shown in Figure \ref{fig:strava}, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre. Strava also provides a premium subscription for \pounds5.99 per month, which features personalised coaching and advanced analysis of your workouts.
 
-The setback of Strava is that you cannot track walks in the app, you are constrained to either running or cycling. 
+The setback of Strava is that you cannot track walks in the app, you are constrained to either running or cycling. With regards to this project, it performs well in allowing the user to record and share their workouts but it does not provide any features for the user to explore areas around. This is expected given that it is a fitness application and does not cater for walking whatsoever.
 
 \begin{figure}[hbt]
   \centering
@@ -60,7 +60,7 @@ The setback of Strava is that you cannot track walks in the app, you are constra
 
 \subsection{Let's Walk}
 
-A lesser well-known iOS application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
+A lesser-known iOS application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
 
 The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
 
@@ -78,7 +78,7 @@ Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one
 
 One feature of the Google Maps iOS application that is interesting to note is the places search along a route during a journey. Once a user has started a walking journey, they are able to search for places that are along the route. Google provides some categories of places to choose from, such as cashpoints and restaurants, but users can search for a specific place if they wish. The app will then display the results of the places search on the map showing how much additional time would be added on to your journey if you were to stop at a place, if any. One of more places can then be added to your journey and the walking directions will subsequently update to include these new stops. Figure \ref{fig:google_maps_place_search} shows an example journey from Imperial College to South Kensington station. It details the full process of choosing \textit{coffee shops} as the place category, selecting a particular coffee shop on the map and the stop being added to the journey.
 
-The places search feature is important as it is unique within any of the existing journey planner apps I have researched and it relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 3}). More research is conducted in Section *** to discover what tools these applications use to implement this feature.
+The places search feature is important as it is unique within any of the existing journey planner apps I have researched and it relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 2}). More research is conducted in Section *** to discover what tools these applications use to implement this feature.
 
 \subsection{Citymapper}
 
@@ -91,6 +91,16 @@ Originating in London, Citymapper \cite{Citymapper} has become one of the leadin
   \label{fig:citymapper}
 \end{figure}
 
+The walking directions in Citymapper are relatively limited. If you choose to walk on any route that you input, you are greeted with the screen shown in Figure \ref{fig:citymapper-walk}. Details such as estimated time of arrival, calorie burn and time of journey are displayed on this screen. Once you press \textit{Go}, you are transferred to the journey view, which simply tracks your location on a map and allows you to share your estimated time of arrival with others.
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.6\textwidth]{citymapper_walk}
+  \caption{Walking view in Citymapper}
+  \label{fig:citymapper-walk}
+\end{figure}
+
+
 
 \subsection{Pok\'{e}mon Go}
 
@@ -100,6 +110,8 @@ Originating in London, Citymapper \cite{Citymapper} has become one of the leadin
 %Although existing navigation apps do not contain any features relating to tracking walks, they do provide information about how journeys and places are displayed on a map.
 
 \subsection{Summary}
+
+From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives.
 
 \section{Gamification}
 
@@ -119,15 +131,15 @@ Many of the applications that I have researched have been developed for iOS, the
 
 \subsection{Location Tracking}
 
-To track the user's location within iOS, an application can use the classes from the Core Location framework \cite{AppleInc.} inbuilt into the iOS SDK (software development kit). This framework allows a developer to obtain the user's current location in the form of latitude and longitude. To keep a history of where the user has been, these coordinates could be stored in an array and updated after a certain period of time.
+To track the user's location within iOS, an application can use the classes from the Core Location framework \cite{AppleInc.} inbuilt into the iOS SDK (software development kit). This framework allows a developer to obtain the user's current location in the form of latitude and longitude. To keep a history of where the user has been, these coordinates could be stored in an array and updated every few seconds.
 
 % section on how to track calories burned?
 
 \subsection{APIs}
 
-Map APIs
+\paragraph{Map APIs}\mbox{}\\
 
-Places APIs
+\paragraph{Places APIs}
 
 % compare Google Maps and Apple Maps
 % and Google Places etc.
