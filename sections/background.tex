@@ -143,7 +143,18 @@ To track the user's location within iOS, an application can use the classes from
 
 \paragraph{Map APIs}\mbox{}\\
 
-\paragraph{Places APIs}
+One of the most important application programming interfaces (APIs) to consider is which source of map to use. The majority of existing applications use Apple's maps apart from, of course, Google Maps. This is because Apple's MapKit framework \cite{AppleInc.a} is much better integrated with the Core Location framework mentioned above, making it much easier to display the user's location on MapKit than on the Google Maps SDK.
+
+% maybe don't include
+However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure ***, where buildings are much easier to see on Google Maps than on Apple Maps.
+
+\paragraph{Places APIs}\mbox{}\\
+
+The other API that needs to be considered is one that relates to gathering points of interest near a user's location. Google's Places API \cite{GoogleInc.b} would be a very good resource to use, allowing you to search for places by over a hundred types including \textit{point of interest}, \textit{place of worship} and \textit{museum}. The only issue with using Google Places is that you must use Google Maps to display the places on. From the Google Places Policies, \textit{``If your application displays data from the Google Places API for iOS on a map, that map must be a Google map"}. \cite{GoogleInc.c}. This would mean that if I were to choose Apple Maps for the maps within the app, I would be unable to use Google Places as well.
+
+Apple also provide a service for obtaining places called MKLocalSearch \cite{AppleInc.b}.
+
+% add link to google places terms of use
 
 % compare Google Maps and Apple Maps
 % and Google Places etc.
