@@ -52,7 +52,7 @@ The setback of Strava is that you cannot track walks in the app, you are constra
 
 \begin{figure}[hbt]
   \centering
-  \includegraphics[width=0.8\textwidth]{strava}
+  \includegraphics[width=0.7\textwidth]{strava}
   \caption{Journey view in Strava, allowing you to switch between statistics (left) or a map of your progress (right)}
   \label{fig:strava}
 \end{figure}
@@ -66,7 +66,7 @@ The app is also focused on helping you maintain a balanced diet -- the amount of
 
 \subsection{Google Maps}
 
-Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one of the oldest services that provides route planning via different transport modes. The app contains current information about public transport, traffic and displays well-known cycling routes on map but there is little in the way of customisation for walking. When entering a destination, the app generates a route but users can also choose from a few different routes on map with the difference in time each one would take. However, no information is given as to whether a certain route is quieter than another, for example.
+Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one of the oldest services that provides route planning via different transport modes. The mobile app contains current information about public transport, traffic and displays well-known cycling routes on a map, however there is little in the way of customisation for walking. When entering a destination, the app generates a route but users can also choose from a few different routes on the map with the app showing the difference in time each one would take. However, no information is given as to whether a certain route is quieter than another, for example.
 
 \begin{figure}[hbt]
   \centering
@@ -78,7 +78,7 @@ Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one
 
 One feature of the Google Maps iOS application that is interesting to note is the places search along a route during a journey. Once a user has started a walking journey, they are able to search for places that are along the route. Google provides some categories of places to choose from, such as cashpoints and restaurants, but users can search for a specific place if they wish. The app will then display the results of the places search on the map showing how much additional time would be added on to your journey if you were to stop at a place, if any. One of more places can then be added to your journey and the walking directions will subsequently update to include these new stops. Figure \ref{fig:google_maps_place_search} shows an example journey from Imperial College to South Kensington station. It details the full process of choosing \textit{coffee shops} as the place category, selecting a particular coffee shop on the map and the stop being added to the journey.
 
-The places search feature is important as it is unique within any of the existing journey planner apps I have researched and it relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 2}). More research is conducted in Section *** to discover what tools these applications use to implement this feature.
+The places search feature is important as it is unique within any of the existing journey planner apps I have researched and it relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 2}). More research is conducted in Section \ref{subsection:apis} to discover what tools these applications use to implement this feature.
 
 \subsection{Citymapper}
 
@@ -110,9 +110,7 @@ One of the more interesting parts of the application that is relevant to this pr
 
 \subsection{Summary}
 
-From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives.
-
-It is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
+From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
 
 \section{Gamification}
 
@@ -121,9 +119,9 @@ It is important for this project to have a sleek design and easy to use interfac
 
 Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, business and mental health. 
 
-%We have seen how gamification can be used in existing applications, 
+We have seen how gamification can be used in existing fitness applications, with some apps setting challenges for users to complete within a given timeframe such as running a half marathon in February.
 
-An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features for your in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example. 
+An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features for your in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example.
 
 The idea of using gamification in applications is to motivate you to complete some form of task that you otherwise might not have attempted. It can make an app seem more engaging to the user, providing them with something to achieve every time they use the app. It is especially useful in fitness applications as keeping fit and staying healthy is very important, and should therefore be carefully considered for this project.
 
@@ -143,7 +141,7 @@ To track the user's location within iOS, an application can use the classes from
 
 % section on how to track calories burned?
 
-\subsection{APIs}
+\subsection{APIs} \label{subsection:apis}
 
 \paragraph{Map APIs}\mbox{}\\
 
@@ -154,7 +152,7 @@ However, there are some advantages of Google Maps over Apple Maps -- one being t
 
 \begin{figure}[hbt]
   \centering
-  \includegraphics[width=0.8\textwidth]{google-apple}
+  \includegraphics[width=0.7\textwidth]{google-apple}
   \caption{An example of the difference between Google Maps (left) and Apple Maps (right), showing Imperial College London}
   \label{fig:google-apple}
 \end{figure}
@@ -162,28 +160,28 @@ However, there are some advantages of Google Maps over Apple Maps -- one being t
 
 \paragraph{Places APIs}\mbox{}\\
 
-The other API that needs to be considered is one that relates to gathering points of interest near a user's location. Google's Places API \cite{GoogleInc.b} would be a very good resource to use, allowing you to search for places by over a hundred types including \textit{point of interest}, \textit{place of worship} and \textit{museum}. The only issue with using Google Places is that you must use Google Maps to display the places on. From the Google Places Policies, \textit{``If your application displays data from the Google Places API for iOS on a map, that map must be a Google map"}. \cite{GoogleInc.c}. This would mean that if I were to choose Apple Maps for the maps within the app, I would be unable to use Google Places as well.
+The other API that I need to consider is one that gathers points of interest near a user's location. Google's Places API \cite{GoogleInc.b} would be a very good resource to use, allowing you to search for places by over a hundred types including \textit{point of interest}, \textit{place of worship} and \textit{museum}. The only issue with using Google Places is that you must use Google Maps to display the places on. From the Google Places Policies, \textit{``If your application displays data from the Google Places API for iOS on a map, that map must be a Google map"} \cite{GoogleInc.c}. This would mean that if I were to choose Apple Maps for the maps within the app, I would be unable to use Google Places as well.
 
-Apple also provides an API for obtaining places called \texttt{MKLocalSearch} \cite{AppleInc.b}. To generate a list of places, you pass the \texttt{init()} method a \texttt{MKLocalSearchRequest}, which contains a string describing what type of place you would like to search for on a map. There seems to be little documentation online as to the range of places that this API returns, which is something to consider when comparing it to other similar services.
+Apple also provides an API for obtaining places called \texttt{MKLocalSearch} \cite{AppleInc.b}. To generate a list of places, you pass the \texttt{init()} method a \texttt{MKLocalSearchRequest}, which contains a string describing what type of place you would like to search for on a map. There seems to be little documentation online explaining what range of places that this API returns, which is something to consider when comparing it to other similar services.
 
 A different option that could be used to generate points of interest around a geographical location originates from Pok\'{e}mon Go. As mentioned in Section \ref{subsection:pokemongo}, Pok\'{e}mon Go contains thousands of Pok\'{e}stops -- crowdsourced points of interest from all over the world. There exists an API \cite{Selwyn} that returns a list of Pok\'{e}stops in JSON format given a location. Each item that the API returns contains the name and location of a point of interest as shown in Listing \ref{listing:pokestop}, and so could therefore be used in this project.
 
 \begin{listing}
   \centering
-  \begin{lstlisting}
+  \begin{lstlisting}[style=json]
   {
       "distance": 44, 
       "name": "Sherfield Building", 
       "bearing": 200, 
       "latitude": 51.498359, 
-      "image": "http://lh3.googleusercontent.com/07q4ms3tgDKsQMy04xye_i-"
-      "UiraPO3jOS18TXwKpTMecgIXm2jXByO1CAUWVW9vNgqfx12ZtjqLdZrOlfsPu", 
+      "image": "http://lh3.googleusercontent.com/07q4ms3tgDKsQMy04xye
+            <@\textcolor{red}{\hspace*{20pt}\_i-UiraPO3jOS18TXwKpTMecgIXm2jXByO1CAUWVW9vNgqfx12ZtjqLdZrOlfsPu}@>", 
       "guid": "2cc0f9d9c7ba49348299c15749c49ea1.16", 
       "compass": "S", 
       "longitude": -0.178544
   }, 
   \end{lstlisting}
-  \caption{Example of one item returned from the Pok\'{e}stop API}
+  \caption{Example of one item returned from the Pok\'{e}stop API, with attributes including its name, coordinates and distance from your location}
   \label{listing:pokestop}
 \end{listing}
 
