@@ -100,28 +100,35 @@ The walking directions in Citymapper are relatively limited. If you choose to wa
   \label{fig:citymapper-walk}
 \end{figure}
 
-
-
 \subsection{Pok\'{e}mon Go} \label{subsection:pokemongo}
 
 Pok\'{e}mon Go, released last July, quickly grew to become one of the most popular games of the year. Although not necessarily a walking application in the normal sense, the aim of the game is to capture virtual `creatures' called Pok\'{e}mon that appear in real world places. Thus, the game motivates you to walk more to collect more and more Pok\'{e}mon.
 
 One of the more interesting parts of the application that is relevant to this project are the Pok\'{e}stops within the game. A Pok\'{e}stop is a location in the game where items can be collected and appear on the map in the game. These locations were crowdsourced by users of the game and are normally interesting points in the area such as a statue or a famous plaque on a wall. Although not exactly, this feature of the application does somewhat tie into my objective for helping people discover the world (\textbf{Obj 2}).
 
-%Pok\'{e}mon Go
-
-% maybe don't include this
-%Although existing navigation apps do not contain any features relating to tracking walks, they do provide information about how journeys and places are displayed on a map.
+% add screenshot of pokemon go and pokestop view
 
 \subsection{Summary}
 
 From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives.
+
+It is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
 
 \section{Gamification}
 
 % research how gamification has been used in applications, not just walking apps
 % discuss how well each implementation has worked
 
+Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, business and mental health. 
+
+%We have seen how gamification can be used in existing applications, 
+
+An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features for your in-game avatar.
+
+%As you complete tasks in real life you are rewarded in the app, and when you 
+
+
+The idea of using gamification in applications is to motivate you to complete some form of task that you otherwise might not have attempted. It can make an app seem more engaging to the user, providing them with something to achieve every time they use the app. It is especially useful in fitness applications as keeping fit and staying healthy is very important, and should therefore be carefully considered for this project.
 
 % not sure whether to include this in background or design?
 % think I will include general background on technologies here, and then which ones I chose in design
@@ -131,7 +138,7 @@ The features of existing applications are not the only important part to researc
 
 \subsection{Operating System}
 
-Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. One of the programming languages that iOS apps are developed in is Swift, which is extremely readable and easy to use.
+Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. I have gained a lot of experience in programming in Swift, one of the programming languages used to develop iOS apps, over the last few years due to previous applications that I have developed. Swift is extremely readable and easy to use, which is the reason why I am choosing to use it over the other programming language avaialble, Objective-C.
 
 \subsection{Location Tracking}
 
@@ -146,7 +153,7 @@ To track the user's location within iOS, an application can use the classes from
 One of the most important application programming interfaces (APIs) to consider is which source of map to use. The majority of existing applications use Apple's maps apart from, of course, Google Maps. This is because Apple's MapKit framework \cite{AppleInc.a} is much better integrated with the Core Location framework mentioned above, making it much easier to display the user's location on MapKit than on the Google Maps SDK.
 
 % maybe don't include
-However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure \ref{fig:google-apple}, where buildings are much easier to see on Google Maps than on Apple Maps.
+However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure \ref{fig:google-apple}, where in my opinion roads are clearer and buildings are easily visible on Google Maps than on Apple Maps.
 
 \begin{figure}[hbt]
   \centering
