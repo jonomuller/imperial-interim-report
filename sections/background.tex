@@ -60,9 +60,11 @@ The setback of Strava is that you cannot track walks in the app, you are constra
 
 \subsection{Let's Walk}
 
-A lesser-known iOS application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. It tries to emulate many of the features implemented by the bigger apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
+A lesser-known iOS fitness application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
 
-The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
+Let's Walk tries to emulate many of the features implemented by the more well-known apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
+
+
 
 \subsection{Google Maps}
 
@@ -115,7 +117,7 @@ One of the more interesting parts of the application that is relevant to this pr
 
 \subsection{Summary}
 
-From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
+From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed in Section \ref{section:objectives} have been achieved but no one application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
 
 %\pagebreak
 
@@ -126,9 +128,14 @@ From the subset of fitness applications that I researched in this section, it ca
 
 Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, finance and mental health. We have seen how gamification can be used in existing fitness applications, with some apps setting challenges for users to complete within a given timeframe -- such as running a half marathon in February.
 
-An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features for your in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example. This type of app helps you become more productive at home in a fun and creative way that users enjoy.
+An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features and levelling up in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example. The home page of Habitica, shown in Figure \ref{fig:habitica}, is split into columns containing your bad habits, daily tasks, to-do list and rewards. It also shows the progress of your avatar, along with what is needed to progress to the next level. This type of app helps you become more productive at home in a fun and creative way that users enjoy.
 
-%add photo of Habitica?
+\begin{figure}[hbt]
+  \includegraphics[width=\textwidth]{habitica}
+  \caption{Home page of Habitica showing your habits, tasks and rewards as well as your avatar at the top}
+  \label{fig:habitica}
+\end{figure}
+
 
 Gamification is also used in some finance applications. Mint \cite{IntuitInc.} is an application available in America that links to your bank accounts to help you manage your bills and track how much money you spend. It shows a breakdown of what you are spending your money on and creates a budget with the option of using any left over money on goals to help you save money, as shown in Figure \ref{fig:mint}. You can create goals to be either a long-term one-off payment -- buying a house, for example -- or a short-term monthly payment such as a subscription service. This game mechanic of working towards a goal to help you buy something you want is extremely effective and is why gamification is so widespread.
 
@@ -151,22 +158,20 @@ The features of existing applications are not the only important part to researc
 
 \subsection{Operating System}
 
-Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. I have gained a lot of experience in programming in Swift, one of the programming languages used to develop iOS apps, over the last few years due to previous applications that I have developed. Swift is extremely readable and easy to use, which is the reason why I am choosing to use it over the other programming language avaialble, Objective-C.
+Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. I have gained a lot of experience in programming in Swift, one of the programming languages used to develop iOS apps, over the last few years due to previous applications that I have developed. Swift is extremely readable and easy to use, which is the reason why I am choosing to use it over the other programming language available, Objective-C.
 
 \subsection{Location Tracking}
 
-To track the user's location within iOS, an application can use the classes from the Core Location framework \cite{AppleInc.} inbuilt into the iOS SDK (software development kit). This framework allows a developer to obtain the user's current location in the form of latitude and longitude. To keep a history of where the user has been, these coordinates could be stored in an array and updated every few seconds.
+To track the user's location within iOS, an application can use the classes from the Core Location framework \cite{AppleInc.} inbuilt into the iOS SDK (software development kit). This framework allows a developer to obtain the user's current location in the form of latitude and longitude. To keep a history of where the user has been, these coordinates could be stored in an array and updated every few seconds. This will be useful for my application to show on a map where a user has previously walked.
 
 % section on how to track calories burned?
 
 \subsection{APIs} \label{subsection:apis}
 
-\paragraph{Map APIs}\mbox{}\\
-
 One of the most important application programming interfaces (APIs) to consider is which source of map to use. The majority of existing applications use Apple's maps apart from, of course, Google Maps. This is because Apple's MapKit framework \cite{AppleInc.a} is much better integrated with the Core Location framework mentioned above, making it much easier to display the user's location on MapKit than on the Google Maps SDK.
 
 % maybe don't include
-However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure \ref{fig:google-apple}, where in my opinion roads are clearer and buildings are easily visible on Google Maps than on Apple Maps.
+However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure \ref{fig:google-apple}, where in my opinion roads are easier to see and buildings are clearly visible on Google Maps than on Apple Maps.
 
 \begin{figure}[hbt]
   \centering
@@ -174,9 +179,6 @@ However, there are some advantages of Google Maps over Apple Maps -- one being t
   \caption{An example of the difference between Google Maps (left) and Apple Maps (right), showing Imperial College London}
   \label{fig:google-apple}
 \end{figure}
-
-
-\paragraph{Places APIs}\mbox{}\\
 
 The other API that I need to consider is one that gathers points of interest near a user's location. Google's Places API \cite{GoogleInc.b} would be a very good resource to use, allowing you to search for places by over a hundred types including \textit{point of interest}, \textit{place of worship} and \textit{museum}. The only issue with using Google Places is that you must use Google Maps to display the places on. From the Google Places Policies, \textit{``If your application displays data from the Google Places API for iOS on a map, that map must be a Google map"} \cite{GoogleInc.c}. This would mean that if I were to choose Apple Maps for the maps within the app, I would be unable to use Google Places as well.
 
