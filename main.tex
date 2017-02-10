@@ -12,12 +12,22 @@
 \usepackage[letterspace=400]{microtype}
 \usepackage{hhline}
 \usepackage[table, dvipsnames]{xcolor}
+\usepackage{listing}
+\usepackage{listings, xcolor}
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
 \usepackage{hyperref}
 
 \begin{document}
+
+% listing format
+\lstset{
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    comment=[l]{:},
+    commentstyle=\color{black},
+}
 
 % fancy header at top of each page 
 \pagestyle{fancy}

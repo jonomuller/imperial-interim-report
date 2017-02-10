@@ -102,7 +102,7 @@ The walking directions in Citymapper are relatively limited. If you choose to wa
 
 
 
-\subsection{Pok\'{e}mon Go}
+\subsection{Pok\'{e}mon Go} \label{subsection:pokemongo}
 
 Pok\'{e}mon Go, released last July, quickly grew to become one of the most popular games of the year. Although not necessarily a walking application in the normal sense, the aim of the game is to capture virtual `creatures' called Pok\'{e}mon that appear in real world places. Thus, the game motivates you to walk more to collect more and more Pok\'{e}mon.
 
@@ -146,15 +146,44 @@ To track the user's location within iOS, an application can use the classes from
 One of the most important application programming interfaces (APIs) to consider is which source of map to use. The majority of existing applications use Apple's maps apart from, of course, Google Maps. This is because Apple's MapKit framework \cite{AppleInc.a} is much better integrated with the Core Location framework mentioned above, making it much easier to display the user's location on MapKit than on the Google Maps SDK.
 
 % maybe don't include
-However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure ***, where buildings are much easier to see on Google Maps than on Apple Maps.
+However, there are some advantages of Google Maps over Apple Maps -- one being that Google Maps tends to be more detailed than Apple Maps. An example of this is shown in Figure \ref{fig:google-apple}, where buildings are much easier to see on Google Maps than on Apple Maps.
+
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.8\textwidth]{google-apple}
+  \caption{An example of the difference between Google Maps (left) and Apple Maps (right), showing Imperial College London}
+  \label{fig:google-apple}
+\end{figure}
+
 
 \paragraph{Places APIs}\mbox{}\\
 
 The other API that needs to be considered is one that relates to gathering points of interest near a user's location. Google's Places API \cite{GoogleInc.b} would be a very good resource to use, allowing you to search for places by over a hundred types including \textit{point of interest}, \textit{place of worship} and \textit{museum}. The only issue with using Google Places is that you must use Google Maps to display the places on. From the Google Places Policies, \textit{``If your application displays data from the Google Places API for iOS on a map, that map must be a Google map"}. \cite{GoogleInc.c}. This would mean that if I were to choose Apple Maps for the maps within the app, I would be unable to use Google Places as well.
 
-Apple also provide a service for obtaining places called MKLocalSearch \cite{AppleInc.b}.
+Apple also provides an API for obtaining places called \texttt{MKLocalSearch} \cite{AppleInc.b}. To generate a list of places, you pass the \texttt{init()} method a \texttt{MKLocalSearchRequest}, which contains a string describing what type of place you would like to search for on a map. There seems to be little documentation online as to the range of places that this API returns, which is something to consider when comparing it to other similar services.
 
-% add link to google places terms of use
+A different option that could be used to generate points of interest around a geographical location originates from Pok\'{e}mon Go. As mentioned in Section \ref{subsection:pokemongo}, Pok\'{e}mon Go contains thousands of Pok\'{e}stops -- crowdsourced points of interest from all over the world. There exists an API \cite{Selwyn} that returns a list of Pok\'{e}stops in JSON format given a location. Each item that the API returns contains the name and location of a point of interest as shown in Listing \ref{listing:pokestop}, and so could therefore be used in this project.
 
-% compare Google Maps and Apple Maps
-% and Google Places etc.
+\begin{listing}
+  \centering
+  \begin{lstlisting}
+  {
+      "distance": 44, 
+      "name": "Sherfield Building", 
+      "bearing": 200, 
+      "latitude": 51.498359, 
+      "image": "http://lh3.googleusercontent.com/07q4ms3tgDKsQMy04xye_i-"
+      "UiraPO3jOS18TXwKpTMecgIXm2jXByO1CAUWVW9vNgqfx12ZtjqLdZrOlfsPu", 
+      "guid": "2cc0f9d9c7ba49348299c15749c49ea1.16", 
+      "compass": "S", 
+      "longitude": -0.178544
+  }, 
+  \end{lstlisting}
+  \caption{Example of one item returned from the Pok\'{e}stop API}
+  \label{listing:pokestop}
+\end{listing}
+
+
+
+
+
