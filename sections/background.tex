@@ -40,9 +40,9 @@ The rest of this section discusses each application in detail, explaining their 
 
 \subsection{MapMyWalk}
 
-MapMyWalk \cite{Map} is a popular fitness application for iOS and Android that allows you to track your walks and compete against other users by completing challenges. You are able to track a walk as you go on one, or log a previous workout that you have done without the app.
+MapMyWalk \cite{Map} is a popular fitness application for iOS and Android that allows you to track your walks and complete challenges to help you keep fit. You are able to track a walk as you go on one, or log a previous workout that you have done without the app. The app also provides a premium subscription for \pounds4.49 per month, which gives you the ability to monitor your heart rate and set training goals designed to help you walk more.
 
-The app also provides a premium subscription for \pounds4.49 per month, which gives you the ability to monitor your heart rate and set training goals designed to help you walk more.
+The area in which MapMyWalk lacks is social interaction. A user can publish a walk that they have previously tracked to their profile, but there is no real aspect of communication with other users other than adding each other as friends. There is also a limited level of gamification in the app, with challenges being the only option available to encourage a higher rate of fitness. Challenges can either be added by the user or chosen from a precompiled list, with the latter being fairly limited in the range of options to choose from.
 
 \subsection{Strava}
 
@@ -82,12 +82,12 @@ The places search feature is important as it is unique within any of the existin
 
 \subsection{Citymapper}
 
-Originating in London, Citymapper \cite{Citymapper} has become one of the leading journey planners for major cities around the world including Paris, Barcelona, New York, Tokyo and Sydney. One of the key features of Citymapper is that different modes of transport can be combined to create a faster journey time. For example, a journey from Imperial College to Oxford Circus as shown in Figure \ref{fig:citymapper} could just use the Tube, but it could be faster to hire a bike to a different station and then take the Tube.
+Originating in London, Citymapper \cite{Citymapper} has become one of the leading journey planners for major cities around the world including Paris, Barcelona, New York, Tokyo and Sydney. One of the key features of Citymapper is that different modes of transport can be combined to create a faster journey time. For example, a journey from Imperial College to Oxford Circus (as shown in Figure \ref{fig:citymapper}) could just use the Tube, but it could be faster to hire a bike and cycle to a different station and then take the Tube.
 
 \begin{figure}[hbt]
   \centering
   \includegraphics[width=0.7\textwidth]{citymapper}
-  \caption{Two routes generated on the Citymapper website superimposed}
+  \caption{Two routes generated on the Citymapper website superimposed, with the cycle and Tube route (Route 1) and Tube only route (Route 2)}
   \label{fig:citymapper}
 \end{figure}
 
@@ -95,7 +95,7 @@ The walking directions in Citymapper are relatively limited. If you choose to wa
 
 \begin{figure}[hbt]
   \centering
-  \includegraphics[width=0.6\textwidth]{citymapper_walk}
+  \includegraphics[width=0.55\textwidth]{citymapper_walk}
   \caption{Walking view in Citymapper}
   \label{fig:citymapper-walk}
 \end{figure}
@@ -106,30 +106,37 @@ Pok\'{e}mon Go, released last July, quickly grew to become one of the most popul
 
 One of the more interesting parts of the application that is relevant to this project are the Pok\'{e}stops within the game. A Pok\'{e}stop is a location in the game where items can be collected and appear on the map in the game. These locations were crowdsourced by users of the game and are normally interesting points in the area such as a statue or a famous plaque on a wall. Although not exactly, this feature of the application does somewhat tie into my objective for helping people discover the world (\textbf{Obj 2}).
 
-% add screenshot of pokemon go and pokestop view
+\begin{figure}[hbt]
+  \centering
+  \includegraphics[width=0.7\textwidth]{strava} % change to pokemongo screenshot
+  \caption{Screenshots of Pok\'{e}mon Go showing Pok\'{e}stops in an area (left) and a detailed view of a Pok\'{e}stop (right)}
+  \label{fig:pokemongo}
+\end{figure}
 
 \subsection{Summary}
 
 From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed have been achieved but no one application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
+
+%\pagebreak
 
 \section{Gamification}
 
 % research how gamification has been used in applications, not just walking apps
 % discuss how well each implementation has worked
 
-Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, business and mental health. 
-
-We have seen how gamification can be used in existing fitness applications, with some apps setting challenges for users to complete within a given timeframe such as running a half marathon in February.
+Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, business and mental health. We have seen how gamification can be used in existing fitness applications, with some apps setting challenges for users to complete within a given timeframe -- such as running a half marathon in February.
 
 An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features for your in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example.
 
 The idea of using gamification in applications is to motivate you to complete some form of task that you otherwise might not have attempted. It can make an app seem more engaging to the user, providing them with something to achieve every time they use the app. It is especially useful in fitness applications as keeping fit and staying healthy is very important, and should therefore be carefully considered for this project.
 
+%\pagebreak
+
 % not sure whether to include this in background or design?
 % think I will include general background on technologies here, and then which ones I chose in design
 \section{Technologies}
 
-The features of existing applications are not the only important part to research -- the technologies that they use to implement these features are just as useful. This section discusses how existing applications implement certain features and what technologies integrate well with each other.
+The features of existing applications are not the only important part to research -- the technologies that they use to implement these features are just as useful. This section discusses how existing applications implement certain features and which technologies integrate well with each other.
 
 \subsection{Operating System}
 
@@ -181,7 +188,7 @@ A different option that could be used to generate points of interest around a ge
       "longitude": -0.178544
   }, 
   \end{lstlisting}
-  \caption{Example of one item returned from the Pok\'{e}stop API, with attributes including its name, coordinates and distance from your location}
+  \caption{Example of one item returned from the Pok\'{e}stop API, with attributes including its name, latitude, longitude and distance from your location}
   \label{listing:pokestop}
 \end{listing}
 
