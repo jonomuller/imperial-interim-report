@@ -48,7 +48,7 @@ The area in which MapMyWalk lacks is social interaction. A user can publish a wa
 
 Strava \cite{StravaInc.} is another fitness application that primarily focuses on running and cycling. It features a sleek user interface with similar functionalities as MapMyWalk. The journey view within the application can switch between either showing the map of your workout or a statistics screen as shown in Figure \ref{fig:strava}, visibly showing the time elapsed in the workout, the distance travelled and your average pace per kilometre. Strava also provides a premium subscription for \pounds5.99 per month, which features personalised coaching and advanced analysis of your workouts.
 
-The setback of Strava is that you cannot track walks in the app, you are constrained to either running or cycling. With regards to this project, it performs well in allowing the user to record and share their workouts but it does not provide any features for the user to explore areas around. This is expected given that it is a fitness application and does not cater for walking whatsoever.
+The setback of Strava is that you cannot track walks in the app as you are constrained to either running or cycling. With regards to this project, it performs well in allowing the user to record and share their workouts but it does not provide any features for the user to explore areas around them. This is expected given that it is a fitness application and does not cater for walking whatsoever.
 
 \begin{figure}[hbt]
   \centering
@@ -60,7 +60,7 @@ The setback of Strava is that you cannot track walks in the app, you are constra
 
 \subsection{Let's Walk}
 
-A lesser-known iOS fitness application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. The app is also focused on helping you maintain a balanced diet -- the amount of calories consumed can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
+A lesser-known iOS fitness application is Let's Walk \cite{LetsWalkApp}. Users can record new walks and view a list of either their friends' walks or public walks nearby. The app is also focused on helping you maintain a balanced diet -- the amount of calories you consume can be added for particular meals during the day. A calorie goal per day can then be added, with the app recording how many calories were burned during a walk and updating the goal accordingly.
 
 Let's Walk tries to emulate many of the features implemented by the more well-known apps as mentioned above, but a lot of these features seem unpolished. There is a global ranking section of the application showing which users have walked the most over the last week, month or year, however there seems to be little to do with this information other than view a leaderboard.
 
@@ -68,7 +68,7 @@ Let's Walk tries to emulate many of the features implemented by the more well-kn
 
 \subsection{Google Maps}
 
-Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one of the oldest services that provides route planning via different transport modes. The mobile app contains current information about public transport, traffic and displays well-known cycling routes on a map, however there is little in the way of customisation for walking. When entering a destination, the app generates a route but users can also choose from a few different routes on the map with the app showing the difference in time each one would take. However, no information is given as to whether a certain route is quieter than another, for example.
+Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one of the oldest services that provides route planning via different transport modes. The mobile app contains current information about public transport, traffic and displays well-known cycling routes on a map, however there is little in the way of customisation for walking. When entering a destination, the app generates a route but users can also choose from a few different routes on the map, with the app showing the difference in time each one would take. However, no information is given as to whether a certain route is quieter than another, for example.
 
 \begin{figure}[hbt]
   \centering
@@ -78,7 +78,7 @@ Although not a fitness application per say, Google Maps \cite{GoogleInc.} is one
 \end{figure}
 
 
-One feature of the Google Maps iOS application that is interesting to note is the places search along a route during a journey. Once a user has started a walking journey, they are able to search for places that are along the route. Google provides some categories of places to choose from, such as cashpoints and restaurants, but users can search for a specific place if they wish. The app will then display the results of the places search on the map showing how much additional time would be added on to your journey if you were to stop at a place, if any. One of more places can then be added to your journey and the walking directions will subsequently update to include these new stops. Figure \ref{fig:google_maps_place_search} shows an example journey from Imperial College to South Kensington station. It details the full process of choosing \textit{coffee shops} as the place category, selecting a particular coffee shop on the map and the stop being added to the journey.
+One feature of the Google Maps iOS application that is interesting to note is the ability to search for places along a route during a journey. Once a user has started a walking journey, they are able to search for places that are along the route. Google provides some categories of places to choose from, such as cashpoints and restaurants, but users can search for a specific place if they wish. The app will then display the results of the places search on the map, showing how much additional time would be added on to your journey if you were to stop at a place, if any. One or more places can then be added to your journey and the walking directions will subsequently update to include these new stops. Figure \ref{fig:google_maps_place_search} shows an example journey from Imperial College to South Kensington station. It details the full process of choosing \textit{coffee shops} as the place category, selecting a particular coffee shop on the map and the stop being added to the journey.
 
 The places search feature is important as it is unique within any of the existing journey planner apps I have researched and it relates to one of my objectives regarding displaying points of interest when a user is on a walk (\textbf{Obj 2}). More research is conducted in Section \ref{subsection:apis} to discover what tools these applications use to implement this feature.
 
@@ -89,7 +89,7 @@ Originating in London, Citymapper \cite{Citymapper} has become one of the leadin
 \begin{figure}[hbt]
   \centering
   \includegraphics[width=0.7\textwidth]{citymapper}
-  \caption{Two routes generated on the Citymapper website superimposed, with the cycle and Tube route (Route 1) and Tube only route (Route 2)}
+  \caption{Two routes generated on the Citymapper website superimposed -- cycle and Tube route (Route 1) and Tube only route (Route 2)}
   \label{fig:citymapper}
 \end{figure}
 
@@ -106,7 +106,7 @@ The walking directions in Citymapper are relatively limited. If you choose to wa
 
 Pok\'{e}mon Go, released last July, quickly grew to become one of the most popular games of the year. Although not necessarily a walking application in the normal sense, the aim of the game is to capture virtual `creatures' called Pok\'{e}mon that appear in real world places. Thus, the game motivates you to walk more to collect more and more Pok\'{e}mon.
 
-One of the more interesting parts of the application that is relevant to this project are the Pok\'{e}stops within the game. A Pok\'{e}stop is a location in the game where items can be collected, displayed on a map using blue beacons as shown in Figure \ref{fig:pokemongo}. These locations were crowdsourced by users of the game and are normally interesting points in the area such as a statue, a well-known building or a famous plaque on a wall. Although not exactly, this feature of the application does somewhat tie into my objective for helping people discover the world (\textbf{Obj 2}).
+One of the more interesting parts of the application that is relevant to this project are the Pok\'{e}stops within the game. A Pok\'{e}stop is a location in the game where various in-game items can be collected. They are displayed on a map using blue beacons as shown in Figure \ref{fig:pokemongo}. These locations were crowdsourced by users of the game and are normally points of interest in the area such as a statue, a building or a famous plaque. Although not completely, this feature of the application does somewhat tie into my objective for helping people discover the world (\textbf{Obj 2}).
 
 \begin{figure}[hbt]
   \centering
@@ -117,7 +117,7 @@ One of the more interesting parts of the application that is relevant to this pr
 
 \subsection{Summary}
 
-From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed in Section \ref{section:objectives} have been achieved but no one application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy to use interface, as this is something that stood out straight away when looking at existing applications.
+From the subset of fitness applications that I researched in this section, it can be seen that some of the objectives I proposed in Section \ref{section:objectives} have been achieved but no single application encompasses all of my proposed objectives. I have found that it is important for this project to have a sleek design and easy-to-use interface as this is something that stood out straight away when looking at existing applications.
 
 %\pagebreak
 
@@ -128,7 +128,7 @@ From the subset of fitness applications that I researched in this section, it ca
 
 Gamification is used in mobile applications not only for fitness but also in a wide range of areas including productivity, finance and mental health. We have seen how gamification can be used in existing fitness applications, with some apps setting challenges for users to complete within a given timeframe -- such as running a half marathon in February.
 
-An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features and levelling up in-game avatar. Completing real life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment for your character or real life treats like watching an episode of a TV show, for example. The home page of Habitica, shown in Figure \ref{fig:habitica}, is split into columns containing your bad habits, daily tasks, to-do list and rewards. It also shows the progress of your avatar, along with what is needed to progress to the next level. This type of app helps you become more productive at home in a fun and creative way that users enjoy.
+An application and website called Habitica \cite{Habitica}, labelled as a ``gamified task manager", helps motivate you to complete household tasks by unlocking features and levelling up an in-game avatar. Completing real-life tasks earns you gold for your character, which can then be redeemed for either virtual rewards such as equipment or real-life treats like watching an episode of a TV show, for example. The home page of Habitica, shown in Figure \ref{fig:habitica}, is split into columns containing your bad habits, daily tasks, to-do list and rewards. It also shows the progress of your avatar, along with what is needed to progress to the next level. This type of app helps you become more productive at home in a fun and creative way that users enjoy.
 
 \begin{figure}[hbt]
   \includegraphics[width=\textwidth]{habitica}
@@ -137,7 +137,7 @@ An application and website called Habitica \cite{Habitica}, labelled as a ``gami
 \end{figure}
 
 
-Gamification is also used in some finance applications. Mint \cite{IntuitInc.} is an application available in America that links to your bank accounts to help you manage your bills and track how much money you spend. It shows a breakdown of what you are spending your money on and creates a budget with the option of using any left over money on goals to help you save money, as shown in Figure \ref{fig:mint}. You can create goals to be either a long-term one-off payment -- buying a house, for example -- or a short-term monthly payment such as a subscription service. This game mechanic of working towards a goal to help you buy something you want is extremely effective and is why gamification is so widespread.
+Gamification is also used in some finance applications. Mint \cite{IntuitInc.} is an application available in America that links to your bank accounts to help you manage your bills and track how much money you spend. It shows a breakdown of what you are spending your money on and creates a budget with the option of using any left over money on goals designed to help you save money, as shown in Figure \ref{fig:mint}. You can create goals to be either a long-term one-off payment -- buying a house, for example -- or a short-term monthly payment such as a subscription service. This game mechanic of working towards a goal to help you buy something you want is extremely effective and is why gamification is so widespread.
 
 \begin{figure}[hbt]
   \centering
@@ -158,7 +158,7 @@ The features of existing applications are not the only important part to researc
 
 \subsection{Operating System}
 
-Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. I have gained a lot of experience in programming in Swift, one of the programming languages used to develop iOS apps, over the last few years due to previous applications that I have developed. Swift is extremely readable and easy to use, which is the reason why I am choosing to use it over the other programming language available, Objective-C.
+Many of the applications that I have researched have been developed for iOS, the operating system running on iPhones and iPads. I have chosen to develop my application on iOS due to my previous experience with iOS app development. Another factor in this choice is that I have gained a lot of experience programming in Swift, one of the programming languages used to develop iOS apps, over the last few years. Swift is extremely readable and easy to use, which is the reason why I am choosing to use it over the other programming language available, Objective-C.
 
 \subsection{Location Tracking}
 
